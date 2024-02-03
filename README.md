@@ -1,6 +1,11 @@
 # Theoretical Analysis of Robust Overfitting for Wide DNNs: An NTK Approach
 
-This is the official repository for the preprint ["Theoretical Analysis of Robust Overfitting for Wide DNNs: An NTK Approach"](https://arxiv.org/abs/2310.06112) by Shaopeng Fu and Di Wang.
+This is the official repository for the ICLR 2024 paper ["Theoretical Analysis of Robust Overfitting for Wide DNNs: An NTK Approach"](https://openreview.net/forum?id=1op5YGZu8X) by Shaopeng Fu and Di Wang.
+
+## News
+
+- 01/2024: The paper was accepted to [ICLR 2024](https://openreview.net/forum?id=1op5YGZu8X).
+- 10/2023: The paper was released on [arXiv](https://arxiv.org/abs/2310.06112).
 
 ## Installation
 
@@ -59,11 +64,11 @@ bash ./scripts/c10/mlp/advntk-r8.sh ./
 ## Citation
 
 ```
-@article{fu2023theoretical,
+@inproceedings{fu2024theoretical,
   title={Theoretical Analysis of Robust Overfitting for Wide DNNs: An NTK Approach},
   author={Shaopeng Fu and Di Wang},
-  journal={arXiv preprint arXiv:2310.06112},
-  year={2023}
+  booktitle={International Conference on Learning Representations},
+  year={2024}
 }
 ```
 
