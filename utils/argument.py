@@ -42,7 +42,7 @@ def add_args_pytorch(parser):
     assert isinstance(parser, argparse.ArgumentParser)
 
     parser.add_argument("--arch", type=str, default="mlp-x",
-                        choices=["mlp-x", "cnn-x"],
+                        choices=["mlp-x", "cnn-x", "rn18", "rn34"],
                         # choices=["rn18", "rn34", "rn50-x",
                         #          "mlp5", "mlp-x",
                         #          "cnn8", "cnn-x"],
@@ -63,7 +63,7 @@ def add_args_nt(parser):
     assert isinstance(parser, argparse.ArgumentParser)
 
     parser.add_argument("--arch-nt", type=str, default="mlp-x",
-                        choices=["mlp-x", "cnn-x"],
+                        choices=["mlp-x", "cnn-x", "rn18", "rn34"],
                         help="select neural tangent model")
     parser.add_argument("--arch-depth", type=int, default=1)
 

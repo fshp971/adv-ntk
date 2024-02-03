@@ -12,3 +12,8 @@ from .cntk import (
     cntk11_gap,
     cnn_x,
 )
+
+from .resnet import (
+    rn18,
+    rn34,
+)

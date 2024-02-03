@@ -169,6 +169,11 @@ def get_arch(arch, arch_depth, arch_wide, dataset, activation=None):
     for d in shape:
         full_dims *= d
 
+    if arch == "rn18":
+        return models.torch.rn18(in_dims, out_dims)
+    if arch == "rn34":
+        return models.torch.rn34(in_dims, out_dims)
+
     if arch == "mlp-x":
         return models.torch.mlp_x(full_dims, out_dims, arch_depth, arch_wide, act_fn)
     if arch == "cnn-x":
@@ -183,6 +188,11 @@ def get_arch_nt(arch, arch_depth, dataset, W_std=1.0, b_std=1.0, activation=None
 
     in_dims, out_dims = dataset_params[dataset]["in_out_dims"]
     act_fn = nt_actfns[activation]
+
+    if arch == "rn18":
+        return models.nt.rn18(out_dims, W_std, b_std, act_fn)
+    if arch == "rn34":
+        return models.nt.rn34(out_dims, W_std, b_std, act_fn)
 
     if arch == "mlp-x":
         return models.nt.mlp_x(out_dims, arch_depth, W_std, b_std, act_fn)
